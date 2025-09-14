@@ -93,31 +93,32 @@ class Model:
 
 class Cube(Model): #preset models
     def __init__(self, position:Vec3 = Vec3.from_list([0, 0, 0]), orientation:tuple = (0, 0, 0), scaling:tuple = (1, 1, 1), name='Object'):
-        super().__init__(position, orientation, scaling, path='assets\cube.txt', name=name)
+        super().__init__(position, orientation, scaling, path='basicpython3d\assets\cube.txt', name=name)
         self.type = 'Cube'
         
 class Square(Model):
     def __init__(self, position:Vec3 = Vec3.from_list([0, 0, 0]), orientation:tuple = (0, 0, 0), scaling:tuple = (1, 1, 1), name='Object'):
-        super().__init__(position, orientation, scaling, path='assets\square.txt', name=name)
+        super().__init__(position, orientation, scaling, path='basicpython3d\assets\square.txt', name=name)
         self.type = 'Square'
         self.invert()
 
 class Sphere(Model):
     def __init__(self, position:Vec3 = Vec3.from_list([0, 0, 0]), orientation:tuple = (0, 0, 0), scaling:tuple = (1, 1, 1), name='Object'):
-        super().__init__(position, orientation, scaling, path='assets\sphere.txt', name=name)
+        super().__init__(position, orientation, scaling, path='basicpython3d\assets\sphere.txt', name=name)
         self.type = 'Sphere'
 
 class Cylinder(Model):
     def __init__(self, position:Vec3 = Vec3.from_list([0, 0, 0]), orientation:tuple = (0, 0, 0), scaling:tuple = (1, 1, 1), name='Object'):
-        super().__init__(position, orientation, scaling, path='assets\cylinder.obj', name=name)
+        super().__init__(position, orientation, scaling, path='basicpython3d\assets\cylinder.obj', name=name)
         self.type = 'Cylinder'
 
 class Teapot(Model):
     def __init__(self, position:Vec3 = Vec3.from_list([0, 0, 0]), orientation:tuple = (0, 0, 0), scaling:tuple = (1, 1, 1), name='Object'):
-        super().__init__(position, orientation, scaling, path='assets\tea2.obj', name=name)
+        super().__init__(position, orientation, scaling, path='basicpython3d\assets\tea2.obj', name=name)
         self.type = 'Teapot'
 
 class Cow(Model):
     def __init__(self, position:Vec3 = Vec3.from_list([0, 0, 0]), orientation:tuple = (0, 0, 0), scaling:tuple = (1, 1, 1), name='Object'):
-        super().__init__(position, orientation, scaling, path='assets\cow.txt', name=name)
+        super().__init__(position, orientation, scaling, path='basicpython3d\assets\cow.txt', name=name)
         self.type = 'Cow'
+
